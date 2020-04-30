@@ -1,0 +1,170 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header>VBA Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+    <li><a class="nav-link" href="#VBA_and_Visual_Basic_6">VBA and Visual Basic 6</a></li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>    
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>    
+   <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+    <li><a class="nav-link" href="#Option_explicit">Option explicit</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Are you facing a repetitive clean up of fifty tables in Word? Do you want a particular document to prompt the user for input when it opens? Are you having difficulty figuring out how to get your contacts from Microsoft Outlook into a Microsoft Excel spreadsheet efficiently?</p>
+
+<p>You can perform these tasks and accomplish a great deal more by using Visual Basic for Applications (VBA) for Office—a simple, but powerful programming language that you can use to extend Office applications.</p>
+
+<p>This article is for experienced Office users who want to learn about VBA and who want some insight into how programming can help them to customize Office.</p>
+
+<p>The Office suite of applications has a rich set of features. There are many different ways to author, format, and manipulate documents, email, databases, forms, spreadsheets, and presentations. The great power of VBA programming in Office is that nearly every operation that you can perform with a mouse, keyboard, or a dialog box can also be done by using VBA. Further, if it can be done once with VBA, it can be done just as easily a hundred times. (In fact, the automation of repetitive tasks is one of the most common uses of VBA in Office.)</p>
+
+<p>Beyond the power of scripting VBA to accelerate every-day tasks, you can use VBA to add new functionality to Office applications or to prompt and interact with the user of your documents in ways that are specific to your business needs. For example, you could write some VBA code that displays a pop up message that reminds users to save a document to a particular network drive the first time they try to save it.</p>
+    </article>
+  </section>
+   <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>Good working knowledge of Microsoft Office products.</li>
+        <li>
+          Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about Visual Basic.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="VBA_and_Visual_Basic_6">
+    <header>VBA and Visual Basic 6</header>
+    <article>
+      <p>VBA and VB6 are almost similar except the fact that VBA cannot build executable and compiled files. Therefore, we are basically doing a comparison between VB6 and VB.Net. In the year 200, Microsoft launched VB.Net to replace VB6. This is because VB6 was not object-oriented while object-oriented concepts were buzzing at that time and people were shifting to C++.</p>
+      <p> Coming to VBA and VB.Net, the basic syntaxes are very similar. However, it is more convenient to code in VB.Net than VBA. For example, you have to write the keyword SET to assign an object to another in VBA which is not required in VB.Net. The following is the list of the differences between Visual Basic.Net and VBA.</p>
+      <ul>
+        <li>Reference – In VBA, you can add external references using tools and references menu. Some of the popular DLL files like user32, shell32, kernal32 and likewise can be included easily. However, if the files and references are not available, there will be malfunctioning. On the other hand, on VB.Net, you can give path addresses according to which the files and libraries will be looked up. This means that if a file is not available in the first path, it will automatically look in the second path. </li>
+        <li>Compatibility – VBA is applicable only in 32-bit or less. Therefore, any program written in VBA will work only in 32-bit processor or less. This does not mean that it will not run in x64, however, it will not be processed faster as you would expect from a 64-bit processor as it will act like a 32-bit processor for the application or program. In other words, there will be limitations in smaller number precision, files size up to 2GB only, and memory limits up to 4GB. It is needless to say that VB. Net is tailor-made for 64-bit processors.</li>
+        <li>Compilation – VBA code is highly accessible, and you can save the code in regular documents and text files. However, it is very difficult to manage VBA code when it becomes high and heavy. Besides, it is difficult for a large team to work in coordination and isolate it in multiple modules. Moreover, it cannot compile and execute files. Whereas, in VB.Net, everything is possible which includes building binary files such as DLL files. This means your code can be encrypted in DLL files and any other application can use it to their benefits. Moreover, if the program is large, you can break it up in different DLL files, functions, modules and EXE files. At last, you can integrate them all using a setup. Moreover, there is enough number of tools available for easy deployment.</li>
+        <li>Framework – The main difference between VB.Net and VBA is the .NET framework. The framework makes it super easy to start any new development. Moreover, the framework contains a lot of security features that are not available in VBA. This is why dividing a large project into modules and therefore, teamwork is possible using VB.Net. Not just that, the error handling has improved significantly due to the use of the framework and new features associated with it. </li>
+        <li>Miscellaneous – There is limited inheritance in VBA while VB.Net is brought forward to have a full-fledged object-oriented approach in VB so that it can compete with C++. In VB.Net, a developer can make a new class from existent class. This will help in the reuse of all functions and properties. Moreover, in VB.Net, you can do operator overloading just that way you can do in C++ which is restricted in VBA. Besides, in terms of code quality, there is no doubt that VB.Net is far cleaner which is extremely important for amateur and young programmers. On the other hand, if the programmers are not careful, there can be a mess in code quality and a major crash is bound to happen. Moreover, there are massive changes in database accessing, Winsock, and various such components which are far more efficient in VB.Net than in VBA most of which are incompetent.</li>
+      </ul>
+      <p>Read more at: <a href="https://www.freelancinggig.com/blog/2019/01/21/what-is-the-difference-between-visual-basic-net-and-vba">www.freelancinggig.com</a></p>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      <p>To get started with writing VBA, open the VBA Editor and write your
+      first "Hello world" module:</p>
+      <pre><code>        
+        Sub hello() 
+          MsgBox “Hello World - Excel VBA here”
+        End Sub
+       </code> </pre>
+      <p>Now hit the F5 button to watch it unfold in your browser!</p>
+    </article>
+  </section>
+     <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <article>
+      <p>Variables are specific values that are stored in a computer memory or storage system. Later, you can use that value in code and execute. The computer will fetch that value from the system and show in the output. Each variable must be given a name.</p>
+
+      <p>To name the variable in VBA, you need to follow the following rules:</p>
+
+      <ul>
+        <li>It must be less than 255 characters</li>
+        <li>No spacing is allowed</li>
+        <li>It must not begin with a number</li>
+        <li>Period is not permitted</li>     
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      <p> Data types used in VBA are:</p>
+      <ul>
+        <li>Byte</li>
+        <li>Integer</li>
+        <li>Single</li>
+        <li>Long</li>
+        <li>Double</li>
+        <li>Decimal</li>
+        <li>Date</li>
+        <li>Currency</li>
+        <li>String</li>
+        <li>Object</li>
+        <li>Boolean</li>
+      </ul>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Declaring_variables">
+    <header>Declaring variables</header>
+    <article>
+      <p>Variables in VBA are declared using the keyword "Dim".  An example of the declaration, assignment, and use of an integer variable in a VBA module is as follows:</p>
+      <pre><code>
+      Sub VBA_Code1()
+        Dim Score As Integer
+        Score = 101
+        MsgBox "Sachin Scored " & Score
+      End Sub
+      </code></pre>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Option_explicit">
+    <header>Option explicit</header>
+    <article>
+      <p>When Option Explicit appears in a module, you must explicitly declare all variables by using the Dim, Private, Public, ReDim, or Static statements. If you attempt to use an undeclared variable name, an error occurs at compile time.</p>
+
+      <p>If you don't use the Option Explicit statement, all undeclared variables are of Variant type unless the default type is otherwise specified with a Deftype statement.</p>
+      <p> Enabling Option Explicit has many benefits:</p>
+      <ol>
+        <li><strong>Catches mistyped variable names.</strong> If you try using a variable that you never defined, as would happen if you mistyped a name, you would receive an error. I’ll demonstrate this later.</li>
+        <li><strong>Saves memory. </strong>If you don’t declare your variables and you don’t use Option Explicit, your VBA compiler implicitly assumes your variables are of data type Variant. This reserves a whopping 16 bytes of data for each variable!</li>
+        <li><strong>Saves time.</strong> Because your VBA compiler has to choose the underlying data type for all your variant variables, your macros will run slower.</li>
+      </ol>
+      
+      <pre><code>
+      Option Explicit
+        Sub OptionExplicitDemo()
+        Dim iSample As Integer
+        iSample = 5
+        iSample = iSampl + 10
+        MsgBox (iSample)
+       End Sub
+      </code></pre>
+    </article>
+  </section>
+  
+    <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <article>
+      <p>VBA functions are used to return calculated values.  They have two main uses:</p>
+      <ul>        
+        <li>To calculate a value within a cell on a worksheet (known as User Defined Functions)</li>
+        <li>To calculate a value within the VBA code</li>
+      </ul>
+      <p>A public function can be called from anywhere, including another open workbook.  An example of this type of function is:</p>
+      <pre><code>
+      Public Function IAmVisible(myText As String)
+        IAmVisible = myText
+      End Function
+      </code></pre>
+      <p>Private functions are only available within the module it is written in.  An example of this type of function is:</p>
+      <pre><code>
+      Private Function NotVisible(myText As String)
+        NotVisible = myText
+      End Function
+      </code></pre>
+    </article>
+  </section>
+  
+</main>
