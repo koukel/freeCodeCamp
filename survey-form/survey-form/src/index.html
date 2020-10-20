@@ -1,0 +1,120 @@
+<div class="container">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header class="header"><center>
+  <h1 id="title">Toni and Kim Survey Form</h1>
+  <p id="description">Tell us a little about yourself</p>
+  </center></header>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input
+           type="text"
+           name="name"
+           id="name"
+           class="form-control"
+           placeholder="Enter your name"
+           required/>
+  </div>
+    <div class="form-group">
+    <label id="email-label" for="email">Email address</label>
+    <input
+           type="email"
+           name="email"
+           id="email"
+           class="form-control"
+           placeholder="Enter your email address"
+           required/>
+  </div>
+    <div class="form-group">
+    <label id="number-label" for="email">Age (optional)</label>
+    <input
+           type="number"
+           min="1"
+           max="115"
+           name="number"
+           id="number"
+           class="form-control"
+           placeholder="Type age"/>
+  </div>
+  <div class="form-group">
+    <p>I'm interested in...</p>
+    <select id="dropdown" name="interests" class="form-control" required>
+      <option disabled selected value>Select interest</option>
+      <option value="movement">How to process complex emotions through movement</option>
+      <option value="trauma">The link between emotional trauma and physical ailments</option>
+      <option value="nutrition">Healing the body, mind, and emotions through nutrition</option>
+      <option value="beliefs">I am ready to transform/break through limiting beliefs</option>
+      <option value="passions">I want to follow my bliss & passions, and to live an OUT LOUD life</option>
+      <option value="creativity">The role of creativity in living a joyful lifestyle that is rewarding and full of peace</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <p>How do you learn best?</p>
+    <label>
+      <input
+             value="audio"
+             type=checkbox
+             class="input-checkbox"
+             name="learning-style">Audio</label> 
+    <label>
+      <input
+             value="one-on-one"
+             type=checkbox
+             class="input-checkbox"
+             name="learning-style">One-on-one</label> 
+    <label>
+      <input
+             value="group"
+             type=checkbox
+             class="input-checkbox"
+             name="learning-style">Group setting</label> 
+    <label>
+      <input
+             value="in-person"
+             type=checkbox
+             class="input-checkbox"
+             name="learning-style">In person</label>
+    <label>
+      <input
+             value="webinar"
+             type=checkbox
+             class="input-checkbox"
+             name="learning-style">Video webinar
+    </label> 
+  </div>
+  <div class="form-group">    
+    <p>Would you like to recieve more from us?</p>
+    <label>
+      <input name="more-info"
+             value="definitely"
+             type="radio"
+             class="input-radio"
+             checked/>Definitely</label>
+    <label>
+      <input name="more-info"
+             value="no-thanks"
+             type="radio"
+             class="input-radio"/>No thanks</label>  
+    <label>
+      <input name="more-info"
+             value="not-sure"
+             type="radio"
+             class="input-radio"/>Not sure</label>
+  </div>
+  <div class=form-group>
+    <p>Is there anything else that you would like us to know?</p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Tell us here.">
+    </textarea>
+  </div>
+  <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+    
+  
+  
+             
